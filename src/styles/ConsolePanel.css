@@ -1,0 +1,102 @@
+.console-panel-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: var(--bg-secondary);
+}
+
+.console-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-md);
+  border-bottom: 1px solid var(--border-primary);
+  background: var(--bg-tertiary);
+}
+
+.output-count {
+  padding: 2px 8px;
+  background: rgba(0, 255, 255, 0.1);
+  border-radius: 12px;
+  font-size: 0.75rem;
+  color: var(--accent-cyan);
+}
+
+.console-btn {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 255, 255, 0.05);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  transition: all var(--transition-fast);
+}
+
+.console-btn:hover {
+  background: rgba(0, 255, 255, 0.1);
+  border-color: var(--accent-cyan);
+  color: var(--accent-cyan);
+}
+
+.console-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--spacing-md);
+  background: var(--bg-primary);
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+}
+
+.console-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: var(--text-tertiary);
+  gap: var(--spacing-md);
+}
+
+.console-messages {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.console-message {
+  display: flex;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid transparent;
+}
+
+.console-message.log {
+  border-left-color: var(--accent-cyan);
+  background: rgba(0, 255, 255, 0.05);
+}
+
+.console-message.error {
+  border-left-color: var(--accent-red);
+  background: rgba(239, 68, 68, 0.05);
+  color: var(--accent-red);
+}
+
+.console-message.warn {
+  border-left-color: var(--accent-yellow);
+  background: rgba(251, 191, 36, 0.05);
+  color: var(--accent-yellow);
+}
+
+.message-type {
+  font-weight: 600;
+  min-width: 60px;
+}
+
+.message-content {
+  flex: 1;
+  word-break: break-word;
+}

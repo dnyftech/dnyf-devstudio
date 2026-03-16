@@ -1,0 +1,2 @@
+This is a placeholder for logo-512.png
+See logo-192.png.txt for conversion instructions

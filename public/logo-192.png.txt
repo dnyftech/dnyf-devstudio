@@ -1,0 +1,10 @@
+This is a placeholder for logo-192.png
+In production, use the logo.svg and convert it to:
+- logo-192.png (192x192 pixels)
+- logo-512.png (512x512 pixels)
+
+Use tools like:
+- Inkscape
+- GIMP
+- Online SVG to PNG converters
+- ImageMagick: convert -background none -size 192x192 logo.svg logo-192.png

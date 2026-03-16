@@ -1,0 +1,41 @@
+{
+  "name": "dnyf-devstudio",
+  "version": "1.0.0",
+  "description": "DNYF DevStudio - Professional Web-Based IDE & Developer Toolkit",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist"
+  },
+  "keywords": [
+    "ide",
+    "code-editor",
+    "developer-tools",
+    "pwa",
+    "monaco-editor"
+  ],
+  "author": "DNYFTECH",
+  "license": "MIT",
+  "dependencies": {
+    "@monaco-editor/react": "^4.6.0",
+    "dexie": "^3.2.4",
+    "framer-motion": "^11.0.8",
+    "idb": "^8.0.0",
+    "lucide-react": "^0.344.0",
+    "monaco-editor": "^0.47.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "zustand": "^4.5.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.56",
+    "@types/react-dom": "^18.2.19",
+    "@vitejs/plugin-react": "^4.2.1",
+    "gh-pages": "^6.1.1",
+    "vite": "^5.1.4",
+    "vite-plugin-pwa": "^0.19.2",
+    "workbox-window": "^7.0.0"
+  }
+}
